@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enrollment Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+</head>
+<body>
+
+  <form id="enrollmentForm">
+    <h2>Enrollment Form</h2>
+
+    <h3 style="color:#eb6fd6;">Personal Information</h3>
+    <label for="First Name">First name:</label><br>
+    <input type="text" id="First Name" name="First Name" required><br><br>
+
+    <label for="Middle Name">Middle name:</label><br>
+    <input type="text" id="Middle Name" name="Middle Name"><br><br>
+
+    <label for="Last Name">Last name:</label><br>
+    <input type="text" id="Last Name" name="Last Name" required><br><br>
+
+    <label for="photo">Upload Photo:</label><br>
+    <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+
+    <label for="Date of Birth">Date of Birth:</label><br>
+    <input type="date" id="Date of Birth" name="Date of Birth" required><br><br>
+
+    <label for="birthplace">Birth Location:</label><br>
+    <input type="text" id="birthplace" name="birthplace"><br><br>
+
+
+    <label for="sex">Sex:</label><br>
+    <select id="sex" name="sex" required>
+      <option value="">--Select--</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="status">Civil Status:</label><br>
+    <select id="status" name="status" required>
+      <option value="">--Select--</option>
+      <option value="single">Single</option>
+      <option value="married">Married</option>
+      <option value="widowed">Widowed</option>
+      <option value="divorced">Divorced</option>
+    </select><br><br>
+
+    <label for="nationality">Nationality:</label><br>
+    <input type="text" id="nationality" name="nationality"><br><br>
+
+    <label for="religion">Religion:</label><br>
+    <input type="text" id="religion" name="religion"><br><br>
+
+    <h3 style="color:#eb6fd6;">Contact Information</h3>
+    <label for="contact">Contact Number:</label><br>
+    <input type="tel" id="contact" name="contact" maxlength="20"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="address">Home Address:</label><br>
+    <textarea id="address" name="address" rows="3" cols="30"></textarea><br><br>
+
+    <h3 style="color:#eb6fd6;">Account Information</h3>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" maxlength="64" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" maxlength="64" required><br><br>
+
+    <label for="confirm_password">Confirm Password:</label><br>
+    <input type="password" id="confirm_password" name="confirm_password" maxlength="64" required><br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <div id="summary" class="summary" style="display:none;">
+    <h3>Enrollment Summary</h3>
+    <div id="summaryContent"></div>
+  </div>
+
+
+<!-- go script -->
+<script src="script.js"></script> 
+</body>
+</html>
